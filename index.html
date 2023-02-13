@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SAPIC+</title>
+  <meta name="description" content="The SAPIC+ platform is a security protocol verification platform enabling the use of multiple tools from a single model.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.min.css" />
+
+  <!-- Custom CSS for the site -->
+  <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        SAPIC+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#documentation">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#research_papers">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#installation">Installation</a>
+          </li>
+        </ul>
+    </nav>
+    </div>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">SAPIC+</h1>
+        <p class="lead text-muted">SAPIC+ is a security protocol verification platform, enabling the use of multiple verification tools as backend. It currently supports exports to <a href="">ProVerif</a>, <a href="https://tamarin-prover.github.io/">Tamarin</a> and <a href="https://deepsec-prover.github.io/">DeepSec</a>. It is directly integrated within Tamarin, which can directly be used to verify the input file, or allows through a command line option to produce a valid input file for either ProVerif or DeepSec.</p>
+
+      </div>
+    </section>
+
+    <div class="main">
+      <div class="container">
+        <h2>About / Core team:</h2>
+        <p>
+          <a href="https://chevalvi.gitlabpages.inria.fr/chevalvi/">Vincent Cheval</a>,
+          <a href="https://charlie.jacomme.fr/">Charlie Jacomme</a>
+          <a href="https://members.loria.fr/SKremer/">Steve Kremer</a>,
+          <a href="https://cispa.de/en/people/kuennemann">Robert Künnemann</a>. </br>
+          Current maintainers:
+	  <a href="https://charlie.jacomme.fr/">Charlie Jacomme</a>,
+	  <a href="https://cispa.de/en/people/kuennemann">Robert Künnemann</a>. </br>
+      </div>
+
+      <div class="container">
+        <a name="documentation"></a>
+        <h2>Documentation<a class="anchorlink" href="#documentation"></a></h2>
+
+        <p>
+          The Tamarin user manual is availabe <a href="manual/index.html">here</a>.<br />
+	  The specific SAPIC+ corresponds to the description of the <a href="https://tamarin-prover.github.io/manual/book/006_protocol-specification-processes.html">protocol specification using processes</a>. Other relevants parts of the protocol include the property specification part, where SAPIC+ uses the same lemma specification as Tamarin (which are in turn automatically translated to Proverif queries).
+        
+        </p>
+      </div>
+
+            <div class="container">
+        <a name="installation"></a>
+        <h2>Installation<a class="anchorlink" href="#installation"></a></h2>
+
+        <p>Installation instructions for Tamarin (and this SAPIC+) are in the <a href="manual/index.html">manual</a>. Beware, SAPIC+ is not yet included in the latest Tamarin release, and must be fetched over the <a href="https://github.com/tamarin-prover/tamarin-prover/tree/develop">develop branch</a> of Tamarin.
+	  See the  <a href="">ProVerif</a> and  <a href="https://deepsec-prover.github.io/">DeepSec</a> website for their corresponding installation instructions. Alternatively, we also provide a Docker, but which may not contain the latest fixes and features.
+
+	</p>
+      </div>
+    </div>
+
+
+      <div class="container">
+        <a name="research_papers"></a>
+        <h2>Research Papers<a class="anchorlink" href="#research_papers"></a></h2>
+
+	<h4>Papers on SAPIC+ and its theory</h4>
+        <ul class="list">
+
+	  <li> "Sapic+ : protocol verifiers of the world, unite!" <a href="https://hal.inria.fr/hal-03693843v2/document" target="_blank">[PDF]</a>, by Vincent Cheval, Charlie Jacomme, Steve Kremer, and Robert Künnemann: the extension from SAPIC to SAPIC+, introducing the exports to ProVerif and DeepSec . Presented at <a href="https://www.usenix.org/conference/usenixsecurity22">USENIX Security 2022</a>.</li>	  
+
+		  <li> "Symbolic Models for Isolated Execution Environments. " <a href="https://eprint.iacr.org/2017/070.pdf" target="_blank">[PDF]</a>, by Charlie Jacomme, Steve Kremer, and Guillaume Scerri: this paper added support for isolated execution environment. Presented at <a href="https://www.ieee-security.org/TC/EuroSP2017/">Euro S&P 2017</a>.</li>
+		  
+		  <li> "A Novel Approach for Reasoning about Liveness in Cryptographic Protocols and its Application to Fair Exchange" <a href="https://hal.inria.fr/hal-01396282" target="_blank">[PDF]</a>, by Michael Backes, Jannik Dreier, Steve Kremer and Robert Künnemann: this paper added non-deterministic choice, reliable channels and local progress to SAPIC. Presented at <a href="https://www.ieee-security.org/TC/EuroSP2017/">Euro S&P 2017</a>.</li>
+		  
+            <li> "Automated analysis of security protocols with global state." <a href="https://arxiv.org/pdf/1403.1142.pdf" target="_blank">[PDF]</a>, by Steve Kremer and Robert Künnemann: the original SAPIC journal paper, introducing the SAPIC input language and its translation to Tamarin's input language. Published in <a href="https://content.iospress.com/journals/journal-of-computer-security/Pre-press/Pre-press">JCS 2016</a>.</li>
+         
+	</ul>
+
+    
+      	<h4>Papers using SAPIC+</h4>
+	<ul class="list">
+	  <li> "A comprehensive, formal and automated analysis of the EDHOC protocol." <a href="https://hal.inria.fr/hal-03810102/document" target="_blank">[PDF]</a>, by Charlie Jacomme, Steve Kremer, Elise Klein, and Maïwenn Racouchot: the first case-study using SAPIC+ to the best of its capabilities, and that helped in the IETF standardization of the EDHOC protocol. Presented at <a href="https://www.usenix.org/conference/usenixsecurity23">USENIX Security 2023</a>.</li>
+	  
+        </li>
+	</ul>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>

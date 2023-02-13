@@ -1,0 +1,70 @@
+/* Custom CSS for the site */
+
+body {
+  background-color: #fff;
+}
+
+h2 {
+  padding-bottom: .5rem;
+}
+
+.container {
+  padding-bottom: 1rem;
+}
+
+.main {
+  padding: 4rem;
+}
+
+.centre-img {
+  display:block;
+  margin:auto;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.figure-text {
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  background-color: #f6f6f6;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card-text {
+  font-size: 85%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
